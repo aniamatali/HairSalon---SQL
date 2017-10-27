@@ -1,0 +1,56 @@
+.container {
+  margin-top:100px;
+  padding-bottom:100px;
+}
+
+h1 {
+  text-align:center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size:100px;
+  color:black;
+}
+
+label {
+  margin-left:15px;
+  margin-top:15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color:#f3f3f3;
+  font-size:25px;
+}
+
+ul {
+  margin-left:0px;
+  padding-left:0px;
+  list-style:none;
+}
+
+.frontbtn {
+  margin-top:0px;
+  width:150px;
+  height:100px;
+}
+
+.btn-primary {
+    background: #fff;
+    color: #000;
+    margin-left:15px;
+}
+
+img {
+  float:right;
+}
+
+#inputStylist {
+  width:200px;
+  margin-left:15px;
+  border:2px solid black;
+}
+
+#inputStylist:hover {
+  background-color:#f3f3f3;
+}
+
+.bigbox {
+  background-image:url("../images/barbershop.png");
+  height:200px;
+}

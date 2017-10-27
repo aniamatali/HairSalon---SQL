@@ -1,3 +1,7 @@
+@{
+  Layout = "_Layout";
+}
+
 <form action='/Stylists/@Model["stylist"].GetId()' method='post'>
   <input id='stylist-id' name='stylist-id' type='hidden' value='@Model["stylist"].GetId()'>
   <label for='inputClient'>Enter Customer Name:</label>

@@ -1,10 +1,32 @@
-<h1>Hair-Salon</h1>
+@{
+  Layout = "_Layout";
+}
 
-<form action="/Stylists" method="post">
-  <label for="inputStylist">Enter Employee:</label>
-  <input name="inputStylist" class="form-control" id="inputStylist">
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
+<div class="container">
+  <h1>Hair-Salon</h1>
 
-<a href="/Stylists">View All Employees</a>
-<a href="/AppointmentChanger">View All Appointments</a>
+  <div class="bigbox">
+    <div class="row">
+      <div class="col-md-2">
+      <ul>
+      <li><a href="/Stylists"><button class="frontbtn">Employees</button></a><br></li>
+      <li><a href="/AppointmentChanger"><button class="frontbtn">Appointments</button></a></li>
+    </ul>
+  </div>
+      <div class="col-md-10">
+        <form action="/Stylists" method="post">
+          <label for="inputStylist">New Employee:</label>
+          <input name="inputStylist" class="form-control" id="inputStylist">
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a href="https://github.com/aniamatali" target=_blank><img src="../images/Aisaac01.png" width=80px></img></a>
+      </div>
+    </div>
+
+  </div>
+</div>
