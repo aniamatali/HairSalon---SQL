@@ -1,12 +1,13 @@
 @{
   Layout = "_Layout";
 }
-
-<form action='/Stylists/@Model["stylist"].GetId()' method='post'>
-  <input id='stylist-id' name='stylist-id' type='hidden' value='@Model["stylist"].GetId()'>
-  <label for='inputClient'>Enter Customer Name:</label>
-  <input id='inputClient' name='inputClient' type='text'>
-  <label for='inputHours'>Enter Appointment Time:</label>
-  <input id='inputHours' name='inputHours' type='text'>
-  <button type='submit'>Add Client</button>
-</form>
+        <form action='/Stylists/@Model["stylist"].GetId()' method='post'>
+          <input id='stylist-id' name='stylist-id' type='hidden' value='@Model["stylist"].GetId()'>
+          <label for='inputClient'>Enter Customer Name: </label>
+          <input id='inputClient' name='inputClient' type='text'>
+          <br>
+          <label for='inputHours'>Enter Appointment Time:</label>
+          <input id='inputHours' name='inputHours' type='text'>
+          <br>
+          <button class="mainbutton" type='submit'>Add Client</button>
+        </form>

@@ -2,14 +2,29 @@
   Layout = "_Layout";
 }
 
-@foreach (var client in @Model)
-{
-<p>@client.GetName()      @client.GetHours()</p>
-<a href="/Stylists/@client.GetId()/update">Edit</a>
-}
-<br>
-<a href="/">Main</a>
-
-<form action="/Clients/Delete" method="post">
-  <button type="submit" class="btn btn-success">Cancel All Appointments</button>
-</form>
+<div class="container">
+  <div class="bigbox2">
+    <h2>Appointments</h2>
+    <div class="row">
+      <div class="col-md-12">
+        @foreach (var client in @Model)
+        {
+          <p>@client.GetName()      @client.GetHours()
+          <a href="/Stylists/@client.GetId()/update">Edit</a></p>
+        }
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button><a href="/">Main</a></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <form action="/Clients/Delete" method="post">
+          <button type="submit" class="mainbutton">Cancel All Appointments</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
