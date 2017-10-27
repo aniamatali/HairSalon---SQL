@@ -82,5 +82,20 @@ namespace HairSalon.Controllers
         return View("RemoveAllAppointments");
       }
 
+      [HttpGet("/Stylists/{id}/update")]
+    public ActionResult ClientUpdate(int id)
+    {
+      Client thisClient = Client.Find(id);
+      return View(thisClient);
+    }
+
+    [HttpPost("/Stylists/{id}/update")]
+    public ActionResult ClientEdit(int id)
+    {
+      Client thisClient = Client.Find(id);
+      thisClient.UpdateClientName(Request.Form["new-name"]);
+      return RedirectToAction("AlphaList");
+    }
+
     }
   }
