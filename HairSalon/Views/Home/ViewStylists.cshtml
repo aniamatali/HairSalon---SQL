@@ -1,0 +1,18 @@
+@foreach (var Stylist in Model)
+{
+<p><a href="Stylists/@Stylist.GetId()">@Stylist.GetName()</a></p>
+}
+
+<br>
+
+<form action="/Stylists" method="post">
+  <label for="inputStylist">Add another Employee:</label>
+  <input name="inputStylist" class="form-control" id="inputStylist">
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+<form action="/Stylists/Delete" method="post">
+  <button type="submit" class="btn btn-success">Remove All Employees</button>
+</form>
+
+<a href="/">Main</a>
