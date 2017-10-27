@@ -9655,11 +9655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\users\\isaac\\desktop\\hairsalon.solution\\HairSalon\\HairSalon.csproj",
+      "projectUniqueName": "C:\\users\\isaac\\desktop\\hairsalon.solution\\hairsalon\\HairSalon.csproj",
       "projectName": "HairSalon",
-      "projectPath": "C:\\users\\isaac\\desktop\\hairsalon.solution\\HairSalon\\HairSalon.csproj",
+      "projectPath": "C:\\users\\isaac\\desktop\\hairsalon.solution\\hairsalon\\HairSalon.csproj",
       "packagesPath": "C:\\Users\\Isaac\\.nuget\\packages\\",
-      "outputPath": "C:\\users\\isaac\\desktop\\hairsalon.solution\\HairSalon\\obj\\",
+      "outputPath": "C:\\users\\isaac\\desktop\\hairsalon.solution\\hairsalon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Isaac\\AppData\\Roaming\\NuGet\\NuGet.Config"
