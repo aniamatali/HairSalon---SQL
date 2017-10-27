@@ -2,21 +2,44 @@
   Layout = "_Layout";
 }
 
-@foreach (var Stylist in Model)
-{
-<p><a href="Stylists/@Stylist.GetId()">@Stylist.GetName()</a></p>
-}
+<
 
-<br>
+<div class="container">
+  <div class="bigbox2">
+    <div class="row">
+      <div class="col-md-12">
+    <h2>Employees</h2>
+  </div>
+</div>
+    <div class="row">
+      <div class="col-md-2">
+        @foreach (var Stylist in Model)
+        {
+          <button class="mainbutton"><a href="Stylists/@Stylist.GetId()">@Stylist.GetName()</a></button><br>
+        }
+      </div>
+      <div class="col-md-6">
+        <form action="/Stylists" method="post">
+          <label for="inputStylist">Add another Employee:</label>
+          <input name="inputStylist" class="form-control" id="inputStylist">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="frontbtn">Submit</button>
+        </form>
+      </div>
 
-<form action="/Stylists" method="post">
-  <label for="inputStylist">Add another Employee:</label>
-  <input name="inputStylist" class="form-control" id="inputStylist">
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
+        <div class="col-md-2">
+          <form action="/Stylists/Delete" method="post">
+          <button type="submit" class="frontbtn">Remove All Employees</button>
+        </form>
+      </div>
 
-<form action="/Stylists/Delete" method="post">
-  <button type="submit" class="btn btn-success">Remove All Employees</button>
-</form>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="mainbutton"><a href="/">Main</a></button>
+        </div>
+      </div>
+    </div>
 
-<a href="/">Main</a>
+  </div>

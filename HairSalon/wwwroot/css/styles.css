@@ -10,9 +10,14 @@ h1 {
   color:black;
 }
 
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:30px;
+  color:white;
+}
+
 label {
-  margin-left:15px;
-  margin-top:15px;
+  padding-top:0px;
   font-family: 'Roboto Condensed', sans-serif;
   color:#f3f3f3;
   font-size:25px;
@@ -33,7 +38,10 @@ ul {
 .btn-primary {
     background: #fff;
     color: #000;
-    margin-left:15px;
+}
+
+.mainbutton {
+  width:inherit;
 }
 
 img {
@@ -42,15 +50,14 @@ img {
 
 #inputStylist {
   width:200px;
-  margin-left:15px;
   border:2px solid black;
-}
-
-#inputStylist:hover {
-  background-color:#f3f3f3;
 }
 
 .bigbox {
   background-image:url("../images/barbershop.png");
   height:200px;
+}
+
+.bigbox2 {
+  background-image:url("../images/patternbg.jpg");
 }
