@@ -35,7 +35,7 @@ namespace HairSalon.Tests
       }
 
       [TestMethod]
-      public void Save_SavesCategoryToDatabase_CategoryList()
+      public void Saves()
       {
         //Arrange
         Stylist testStylist = new Stylist("billy gates");
@@ -48,6 +48,20 @@ namespace HairSalon.Tests
         //Assert
         CollectionAssert.AreEqual(testList, result);
       }
+
+      [TestMethod]
+    public void FindStylistsinDatabase()
+    {
+      //Arrange
+      Stylist testStylist = new Stylist("jeffrey bezos");
+      testStylist.Save();
+
+      //Act
+      Stylist foundStylist = Stylist.Find(testStylist.GetId());
+
+      //Assert
+      Assert.AreEqual(testStylist, foundStylist);
+    }
 
 
     public void Dispose()
