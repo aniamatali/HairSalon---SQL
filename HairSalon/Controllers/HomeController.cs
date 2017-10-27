@@ -45,15 +45,41 @@ namespace HairSalon.Controllers
         string clientName = Request.Form["inputClient"];
         Client newClient = new Client(clientName,id,(Request.Form["inputHours"]));
         newClient.Save();
-
         Dictionary<string, object> model = new Dictionary<string, object>();
         Stylist selectedStylist = Stylist.Find(Int32.Parse(Request.Form["stylist-id"]));
         List<Client> stylistClients = selectedStylist.GetClients();
         model.Add("client", stylistClients);
         model.Add("stylist", selectedStylist);
-
-
         return View("ClientListForStylist", model);
+      }
+
+      [HttpPost("/Stylists/{id}/Delete")]
+      public ActionResult RemoveEmployee(int id)
+      {
+        Stylist.DeleteStylist(id);
+        Client.DeleteClients(id);
+        return View("RemoveThisEmployee");
+      }
+
+      [HttpPost("/Stylists/Delete")]
+      public ActionResult RemoveAllEmployees()
+      {
+        Client.DeleteAll();
+        Stylist.DeleteAll();
+        return View("RemoveAllEmployees");
+      }
+
+      [HttpGet("/AppointmentChanger")]
+      public ActionResult AlphaList()
+      {
+        return View(Client.GetAlphaList());
+      }
+
+      [HttpPost("/Clients/Delete")]
+      public ActionResult CancelAppointments()
+      {
+        Client.DeleteAll();
+        return View("RemoveAllAppointments");
       }
 
     }

@@ -6,10 +6,11 @@
 <p>@client.GetHours()</p>
 }
 
+<a href="/Stylists">Employee Directory</a>
+<br>
+<a href="/Stylists/@Model["stylist"].GetId()">Add Appointment</a>
+<br>
+
 <form action="/Stylists/@Model["stylist"].GetId()/Delete" method="post">
   <button type="submit" class="btn btn-success">Remove Employee</button>
 </form>
-
-<a href="/Stylists">Employee Directory</a>
-<br>
-<a href="/Stylists/@Model["stylist"].GetId()/clients/new">Add Client</a>
