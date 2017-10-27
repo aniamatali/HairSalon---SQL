@@ -1,0 +1,14 @@
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\HairSalon.Tests.deps.json
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\HairSalon.Tests.runtimeconfig.json
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\HairSalon.Tests.runtimeconfig.dev.json
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\obj\Debug\netcoreapp1.1\HairSalon.Tests.csproj.CoreCompileInputs.cache
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\obj\Debug\netcoreapp1.1\HairSalon.Tests.AssemblyInfo.cs
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\HairSalon.Tests.dll
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\HairSalon.Tests.pdb
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\HairSalon.dll
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\bin\Debug\netcoreapp1.1\HairSalon.pdb
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\obj\Debug\netcoreapp1.1\HairSalon.Tests.dll
+C:\users\isaac\desktop\hairsalon.solution\hairsalon.tests\obj\Debug\netcoreapp1.1\HairSalon.Tests.pdb
