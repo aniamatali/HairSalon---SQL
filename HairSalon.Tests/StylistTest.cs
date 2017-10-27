@@ -23,6 +23,33 @@ namespace HairSalon.Tests
          Assert.AreEqual(0, result);
        }
 
+       [TestMethod]
+      public void StylistNamesMatch()
+      {
+        //Arrange, Act
+        Stylist firstStylist = new Stylist("billy gates");
+        Stylist secondStylist = new Stylist("billy gates");
+
+        //Assert
+        Assert.AreEqual(firstStylist, secondStylist);
+      }
+
+      [TestMethod]
+      public void Save_SavesCategoryToDatabase_CategoryList()
+      {
+        //Arrange
+        Stylist testStylist = new Stylist("billy gates");
+        testStylist.Save();
+
+        //Act
+        List<Stylist> result = Stylist.GetAll();
+        List<Stylist> testList = new List<Stylist>{testStylist};
+
+        //Assert
+        CollectionAssert.AreEqual(testList, result);
+      }
+
+
     public void Dispose()
     {
       Stylist.DeleteAll();
