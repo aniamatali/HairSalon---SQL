@@ -29,11 +29,20 @@ ul {
   list-style:none;
 }
 
+a:hover {
+  text-decoration:none;
+}
+
 .frontbtn {
-  margin-top:0px;
   width:150px;
   height:100px;
+  opacity:.6;
 }
+
+.frontbtn:hover {
+  opacity:1;
+}
+
 
 .btn-primary {
     background: #fff;
@@ -42,6 +51,11 @@ ul {
 
 .mainbutton {
   width:inherit;
+  opacity:.6;
+}
+
+.mainbutton:hover {
+  opacity:1;
 }
 
 img {
